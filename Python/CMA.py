@@ -11,9 +11,9 @@ class Phonebook:
 		print(self.data)
 
 	def add_contact(self):
-		x = input()
+		x = input().lower()
 		self.data.update({x:x})
 
 	def delete_contact(self):
-		x = input()
-		self.data.pop({x:x})
+		x = input().lower()
+		self.data.pop(x)
